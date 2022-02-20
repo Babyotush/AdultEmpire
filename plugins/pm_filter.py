@@ -407,8 +407,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🎥🍿 Updates Channel', url='https://t.me/AdultEmpire_xxx')],[
             InlineKeyboardButton('🤖 Other Bots', url='https://t.me/Movie_Collections_Bot/1220')
             ], [
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ], [
             InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
