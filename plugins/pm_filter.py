@@ -404,9 +404,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('🎥🍿 Updates Channel', url='https://t.me/Movie_Collections_Bot')],[
+            InlineKeyboardButton('🎥🍿 Updates Channel', url='https://t.me/AdultEmpire_xxx')],[
             InlineKeyboardButton('🤖 Other Bots', url='https://t.me/Movie_Collections_Bot/1220')
-           
+            ], [
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ], [
+            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -433,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/Movie_Collections_Bot'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/AdultEmpire_xxx'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
