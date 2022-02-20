@@ -23,7 +23,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/Movie_Collections_Bot')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/AdultEmpire_xxx')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -42,9 +42,12 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('🎥🍿 My Updates Channel', url='https://t.me/Movie_Collections_Bot')],[
-            InlineKeyboardButton('🔞 Adult Search Bot', url='https://t.me/AdultEmpire_xxx')
-           
+            InlineKeyboardButton('🎥🍿 Updates Channel', url='https://t.me/AdultEmpire_xxx')],[
+            InlineKeyboardButton('🤖 Other Bots', url='https://t.me/Movie_Collections_Bot/1220')
+            ], [
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ], [
+            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -63,7 +66,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🎥🍿 Join my Updates Channel", url=invite_link.invite_link
+                    "🎥🍿 Please Join my Updates Channel", url=invite_link.invite_link
                 )
             ]
         ]
@@ -81,9 +84,12 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('🎥🍿 Updates Channel', url='https://t.me/Movie_Collections_Bot')],[
-            InlineKeyboardButton('🔞Adult Search Bot', url='https://t.me/AdultEmpire_xxx')
-           
+            InlineKeyboardButton('🎥🍿 Updates Channel', url='https://t.me/AdultEmpire_xxx')],[
+            InlineKeyboardButton('🤖 Other Bots', url='https://t.me/Movie_Collections_Bot/1220')
+            ], [
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ], [
+            InlineKeyboardButton('🔍 Search Here', switch_inline_query_current_chat='')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
